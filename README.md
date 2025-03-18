@@ -14,7 +14,7 @@ Assume you cloned and inside the directory.
 2. As normal user: Create virtual environment: `python -m venv ./.venv`
 3. As normal user: Get into the virtual environment: `. ./.venv/bin/activate`
 4. As normal user: `pip install mediapipe python-ydotool`
-5. As normal user: `wget -O face_landmarker_v2_with_blendshapes.task -q https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task`
+5. As normal user: `wget -O face_landmarker.task -q https://storage.googleapis.com/mediapipe-models/face_landmarker/face_landmarker/float16/1/face_landmarker.task`
 6. As root: `ydotoold --socket-path=/tmp/.ydotool_socket --socket-own="$(id -u YOUR_USERNAME_FOR_NORMAL_USER):$(id -g YOUR_USERNAME_FOR_NORMAL_USER)"`
 7. As normal user: Run `python ./main.py --frameWidth=600 --frameHeight=400` . The lower value for `--frameWidth=` and `--frameHeight`, the more FPS you get.
 
